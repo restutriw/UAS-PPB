@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txUsername" type="id" />
+    <item name="txPassword" type="id" />
+    <item name="btnLogin" type="id" />
+    <item name="tvCreateAccount" type="id" />
+    <item name="txUsernameReg" type="id" />
+    <item name="txPasswordReg" type="id" />
+    <item name="txConPassword" type="id" />
+    <item name="btnRegister" type="id" />
+    <item name="tvRegister" type="id" />
+    <item name="txID" type="id" />
+</resources>
