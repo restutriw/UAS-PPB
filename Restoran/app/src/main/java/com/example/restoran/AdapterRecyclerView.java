@@ -62,14 +62,38 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
             
             if(dataItem.get(position).getName().equals("Chicken Katsu")){
                 Intent intent = new Intent(context, DefaultActivity.class);
-                intent.putExtra("GAMBAR DEFAULT", R.drawable.f_yakiniku);
+                intent.putExtra("GAMBAR DEFAULT", R.drawable.f_katsu);
                 intent.putExtra("TEKS DEFAULT", "Chicken Katsu merupakan hidangan khas Jepang berupa daging ayam yang dibalur tepung dan digoreng.");
                 context.startActivity(intent);
             }
             if(dataItem.get(position).getName().equals("Chicken Curry")){
                 Intent intent = new Intent(context, DefaultActivity.class);
-                intent.putExtra("GAMBAR DEFAULT", R.drawable.katsu);
-                intent.putExtra("TEKS DEFAULT", "Chicken Curry adalah");
+                intent.putExtra("GAMBAR DEFAULT", R.drawable.f_curry);
+                intent.putExtra("TEKS DEFAULT", "Chicken Curry terdiri dari nasi putih, ayam goreng tepung, disiram saus kari Jepang");
+                context.startActivity(intent);
+            }
+            if(dataItem.get(position).getName().equals("Chicken Egg Roll")){
+                Intent intent = new Intent(context, DefaultActivity.class);
+                intent.putExtra("GAMBAR DEFAULT", R.drawable.f_eggroll);
+                intent.putExtra("TEKS DEFAULT", "Chicken Egg Roll terbuat dari daging ayam giling kemudian dibungkus dengan telur dadar dan dimasak dengan metode deep frying oil. ");
+                context.startActivity(intent);
+            }
+            if(dataItem.get(position).getName().equals("Shrimp Tempura")){
+                Intent intent = new Intent(context, DefaultActivity.class);
+                intent.putExtra("GAMBAR DEFAULT", R.drawable.f_tempura);
+                intent.putExtra("TEKS DEFAULT", "Shrimp Tempura terbuat dari udang yang dibalut dengan tepung lalu digoreng.");
+                context.startActivity(intent);
+            }
+            if(dataItem.get(position).getName().equals("Beef Teriyaki")){
+                Intent intent = new Intent(context, DefaultActivity.class);
+                intent.putExtra("GAMBAR DEFAULT", R.drawable.f_teriyaki);
+                intent.putExtra("TEKS DEFAULT", "Beef Teriyaki terbuat dari daging sapi yang dipadukan dengan saus teriyaki dengan cita rasa asin dan manis.");
+                context.startActivity(intent);
+            }
+            if(dataItem.get(position).getName().equals("Beef Yakiniku")){
+                Intent intent = new Intent(context, DefaultActivity.class);
+                intent.putExtra("GAMBAR DEFAULT", R.drawable.f_yakiniku);
+                intent.putExtra("TEKS DEFAULT", "Beef Yakiniku terbuat dari daging sapi yang dipanggang seperti bistik dan barbeque.");
                 context.startActivity(intent);
             }
         });
